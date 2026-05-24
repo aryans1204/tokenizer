@@ -23,5 +23,5 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(unordered_dense)
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
-nanobind_add_module(bpe_tokenizer cs336_basics/bpe_tokenizer.cpp)
+nanobind_add_module(bpe_tokenizer bpe_tokenizer.cpp)
 target_link_libraries(bpe_tokenizer PRIVATE unordered_dense::unordered_dense)
